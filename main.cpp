@@ -1,6 +1,6 @@
 #include<iostream>
 #include<time.h>
-// console input output 헤더파일이다. 콘솔창에서 입출력 하는 기능들을 제공해주는 헤더파일이다.
+// console input output 헤더파일이다. 콘솔창에서 입출력 하는 기능들을 제공해주는 헤더파일이다
 #include<conio.h>
 
 using namespace std;
