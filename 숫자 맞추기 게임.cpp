@@ -6,12 +6,12 @@ using namespace std;
 int main() {
 
 	srand((unsigned int)time(0));
-	int sNum[3], iNum[3];
+	int isNum[3], iNum[3];
 	int iTry = 0;
 
 	// 임의의 수 3개 생성
 	for (int i = 0; i < 3; i++)
-		sNum[i] = rand() % 10;
+		isNum[i] = rand() % 10;
 	
 	// 생성된 임의의 수 확인
 	//for (int i = 0; i < 3; i++)
@@ -24,13 +24,13 @@ int main() {
 		printf("숫자(0~9) 3개 입력(ex:0 0 0) : ");
 		// 숫자 입력
 		for (int i = 0; i < 3; i++) {
-			scanf("%d", iNum + i);
+			cin >> iNum[i];
 		}
 
 		// 자리와 숫자 모두 맞추면 aSet+1, 숫자만 맞추면 nSet+1
 		for (int i = 0; i < 3; i++) {
 			for (int j = 0; j < 3; j++) {
-				if (iNum[i] == sNum[j]) {
+				if (iNum[i] == isNum[j]) {
 					if (i == j) aSet++;
 					else nSet++;
 				}
